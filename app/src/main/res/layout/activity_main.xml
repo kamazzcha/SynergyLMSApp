@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130sp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Логин"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30sp"
+        android:layout_marginHorizontal="30sp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/login"
+        android:layout_marginTop="30sp"
+        android:layout_marginHorizontal="30sp"
+        android:hint="Пароль"
+        android:textColorHint="@color/colorHint"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorText"
+        android:textSize="25sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="50sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginHorizontal="60sp"
+        android:text="Войти" />
+
+
+</RelativeLayout>
